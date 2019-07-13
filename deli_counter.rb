@@ -10,3 +10,7 @@ def line(deli)
     puts line.strip
   end
 end
+
+def take_a_number(deli, name)
+  deli << name
+  puts "Welcome, #{name}. You are number #{deli.find_index(name) + 1} in line."
